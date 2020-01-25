@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-import knight from './knight.png';
 
 export default function Cell(props) {
 
