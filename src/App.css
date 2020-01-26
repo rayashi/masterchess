@@ -1,6 +1,32 @@
-.App {
-  min-height: 40em;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+button{
+  display: block;
+  margin: 0;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  border-width: 0;
+}
+
+button:hover {
+  cursor: pointer;
 }

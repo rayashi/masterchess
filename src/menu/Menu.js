@@ -16,8 +16,11 @@ export default function Menu() {
   }
 
   return(
-    <button type="button" onClick={onGetMovesPress}>
-      Show second turn possibilities
-    </button>
+    <div className="menu">
+      <button type="button" onClick={onGetMovesPress}>
+        Show second turn possibilities
+      </button>
+    </div>
+
   );
 }
