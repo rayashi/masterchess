@@ -4,8 +4,7 @@ import axios from "axios";
 import { getMovesSuccess, getMovesFailued} from "./BoardActions";
 
 const fetchMoves = async cell => {
-  axios.defaults.baseURL = "http://127.0.0.1:8000";
-  const response = await axios.post("/next-moves", { cell });
+  const response = await axios.post("/knight-moves", { cell });
   return response.data;
 };
 
