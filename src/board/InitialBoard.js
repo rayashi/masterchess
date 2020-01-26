@@ -10,7 +10,7 @@ export const createInitialBoard = () => {
               id: `${column}${row}`, 
               rowIndex: rowIndex,
               columnIndex: columnIndex,
-              className: (columnIndex+rowIndex)%2 ? "even" : "odd"
+              className: (columnIndex+rowIndex)%2 ? "odd" : "even"
           });
       });
       return initialCells.push(line);
