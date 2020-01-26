@@ -7,10 +7,12 @@ import "./Menu.css";
 
 export default function Menu() {
   const dispatch = useDispatch();
-  const knight = useSelector(state => state.BoardReducer.knight);
+  const { knight } = useSelector(state => state.BoardReducer);
 
   function onGetMovesPress(){
-    dispatch(getMoves(knight.id));
+    if(knight){
+      dispatch(getMoves(knight.id));
+    }
   }
 
   return(

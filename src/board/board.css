@@ -19,7 +19,10 @@
 
 .cell:hover {
     cursor: pointer;
-    background-color:royalblue;
+    background-image: url("./images/knight.png");
+    background-position: center;
+    background-size: 2em 2em;
+    background-repeat: no-repeat;
 }
 
 .odd {
@@ -31,8 +34,15 @@
 }
 
 .knightCell {
-    background-image: url("knight.png");
+    background-image: url("./images/knight.png");
     background-position: center;
     background-size: 2em 2em;
+    background-repeat: no-repeat;
+}
+
+.highlightCell {
+    background-image: url("./images/dot.png");
+    background-position: center;
+    background-size: 1.2em 1.2em;
     background-repeat: no-repeat;
 }

@@ -1,8 +1,8 @@
 
-import initialBoard from "./InitialBoard";
+import { createInitialBoard } from "./InitialBoard";
 
 const INITIAL_STATE = {
-  cells: initialBoard(),
+  cells: createInitialBoard(),
   knight: null,
   loading: false,
   moves: []
@@ -12,19 +12,19 @@ export default (state = INITIAL_STATE, action) => {
 
   switch (action.type) {
     case "SET_KNIGHT":
-      return { ...state, knight: action.payload };
+      return { ...state, knight: action.payload, moves: [] };
 
     case "SET_CELLS":
       return { ...state, cells: action.payload };
     
     case "GET_MOVES":
-      return { ...state, cell: action.payload };
+      return { ...state, cell: action.payload, loading: true, moves: [] };
 
     case "GET_MOVES_SUCCESS":
-      return { ...state, cell: action.payload };
+      return { ...state, moves: action.payload, loading: true };
 
     case "GET_MOVES_FAILUED":
-      return { ...state, cell: action.payload };
+      return { ...state, cell: action.payload, loading: false };
 
     default:
       return state;

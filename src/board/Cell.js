@@ -5,12 +5,13 @@ import { setKnight } from "./BoardActions";
 
 export default function Cell(props) {
   const dispatch = useDispatch();
-  const knight = useSelector(state => state.BoardReducer.knight);
+  const { knight, moves } = useSelector(state => state.BoardReducer);
 
   const styleClasses = [
     "cell",
     props.cell.className,
-    knight && props.cell.id === knight.id && "knightCell"
+    knight && props.cell.id === knight.id && "knightCell",
+    moves.includes(props.cell.id) && "highlightCell"
   ];
 
   function onCellPress() {
