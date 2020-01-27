@@ -18,13 +18,13 @@ export default (state = INITIAL_STATE, action) => {
       return { ...state, cells: action.payload };
     
     case "GET_MOVES":
-      return { ...state, cell: action.payload, loading: true, moves: [] };
+      return { ...state, loading: true, moves: [] };
 
     case "GET_MOVES_SUCCESS":
       return { ...state, moves: action.payload, loading: false, knight: null };
 
     case "GET_MOVES_FAILUED":
-      return { ...state, cell: action.payload, loading: false };
+      return { ...state, loading: false };
 
     default:
       return state;
