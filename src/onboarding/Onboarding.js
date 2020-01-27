@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
+import Logo from "../shared/logo/Logo";
 import BoxContent from "./BoxContent";
 import "./Onboarding.css";
 import steps from './Steps';
@@ -20,16 +21,13 @@ export default function Onboarding() {
   return(
     <div className="onboarding">
 
-      <div className="logo">
-        <img alt="Logo" src={require("../images/knight.png")}/>
-        <h1>Masterchess</h1>
-      </div>
+      <Logo />
 
       <div className="box">
         <BoxContent content={steps[currentStep]} />
 
         <button type="button" onClick={onNextPress}>
-          NEXT
+          {steps[currentStep].buttonText}
         </button>
       </div>
 

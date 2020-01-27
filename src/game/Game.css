@@ -2,15 +2,15 @@
   display: flex;
   justify-content: center;
   background-color: white;
-  padding: 4em;
+  padding: 2em;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 1em;
 }
 
-@media(max-width: 600px){
+@media(max-width: 800px){
   .game {
-    padding: 2em;
+    padding: 0.5em;
     flex-direction: column;
   }  
 }

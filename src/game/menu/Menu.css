@@ -1,7 +1,18 @@
 .menu {
-  margin: 1em;
+  margin-right: 2em;
 }
 
-.menu > button {
+.menu button {
   width: 100%;
+}
+
+.menu .message {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+@media(max-width: 800px){
+  .menu {
+    margin: 1em;
+  }
 }

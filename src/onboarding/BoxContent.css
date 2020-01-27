@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   align-items: center;
   padding: 3em;
 }
@@ -24,5 +23,8 @@
 @media(max-width: 600px){
   .cardContent{
     padding: 2em;
+  }
+  .cardContent > img, .cardContent > h3, .cardContent > p {
+    margin: 0.5em;
   }
 }

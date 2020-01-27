@@ -44,11 +44,11 @@
   background-repeat: no-repeat;
 }
 
-@media(max-width: 600px){
+@media(max-width: 800px){
   .cell {
     overflow: auto;
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
   } 
 }
   
