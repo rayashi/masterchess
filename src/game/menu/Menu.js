@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import { getMoves } from "../board/BoardActions";
-
 import "./Menu.css";
 
 export default function Menu() {

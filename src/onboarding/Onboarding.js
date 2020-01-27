@@ -1,29 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 
+import BoxContent from "./BoxContent";
 import "./Onboarding.css";
-import Card from "./Card";
-
+import steps from './Steps';
 
 export default function Onboarding() {
+  const history = useHistory();  
+  const [currentStep, setCurrentStep] = useState(0);
 
-  const cards = [
-    { 
-      title: "Let's guess knight moves!", 
-      text: "Using Masterchess you can discover all cells where the Knight can move in exactly two turns",
-      image: require("./images/chess.png")
+  function onNextPress(){
+    if(currentStep+1>=steps.length){
+      history.push("/game");
+    }else{
+      setCurrentStep(currentStep+1);
     }
-  ];
+  }
 
   return(
     <div className="onboarding">
-    
-      <div className="card">
 
-        <Card content={cards[0]} />
-        
+      <div className="logo">
+        <img alt="Logo" src={require("../images/knight.png")}/>
+        <h1>Masterchess</h1>
+      </div>
 
-        <button type="button">
-          Next
+      <div className="box">
+        <BoxContent content={steps[currentStep]} />
+
+        <button type="button" onClick={onNextPress}>
+          NEXT
         </button>
       </div>
 

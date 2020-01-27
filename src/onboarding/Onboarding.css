@@ -1,20 +1,56 @@
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 0.5em;
+.onboarding {
+  display: flex;
+  flex-direction: row;
 }
 
-.card:hover {
+.logo {
+  margin-right: 2em;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color:cornsilk;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
+
+.logo > img {
+  width: 2.5em;
+}
+
+.logo > h1 {
+  font-size: 1.2em;
+  margin-top: 0.2em;
+  color: #414f5a;
+}
+
+.box {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 1em;
+  width: 25em;
+}
+  
+.box:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.card > button {
+.box > button {
   margin: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   width: 100%;
+  font-size: 1.2em;
 }
 
-.cardContent {
-  padding: 3em;
+@media(max-width: 600px){
+  .onboarding{
+    flex-direction: column;
+  }
+  .logo{
+    margin-right: 0em;
+    margin-bottom: 1em;
+  }
 }

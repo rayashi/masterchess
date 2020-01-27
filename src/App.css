@@ -13,7 +13,8 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Roboto", sans-serif;
-  
+  background-image: url("./images/background.jpg");
+  background-size: 20em 20em;
 }
 
 button{
@@ -21,7 +22,7 @@ button{
   margin: 0;
   padding: 1em;
   border-radius: 0.5em;
-  background-color: cadetblue;
+  background-color: #414f5a;
   color: white;
   font-weight: bold;
   border-width: 0;
@@ -29,4 +30,5 @@ button{
 
 button:hover {
   cursor: pointer;
+  background-color: #43637c;
 }

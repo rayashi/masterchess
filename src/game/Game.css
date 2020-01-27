@@ -1,0 +1,16 @@
+.game {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 4em;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 1em;
+}
+
+@media(max-width: 600px){
+  .game {
+    padding: 2em;
+    flex-direction: column;
+  }  
+}

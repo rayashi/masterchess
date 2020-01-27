@@ -1,0 +1,7 @@
+.menu {
+  margin: 1em;
+}
+
+.menu > button {
+  width: 100%;
+}

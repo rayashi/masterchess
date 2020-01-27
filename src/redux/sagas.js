@@ -1,6 +1,6 @@
 import { takeLatest, all } from "redux-saga/effects";
 
-import { getMovesAsync } from "../board/BoardSagas";
+import { getMovesAsync } from "../game/board/BoardSagas";
 
 export default function* rootSagas() {
   yield all([

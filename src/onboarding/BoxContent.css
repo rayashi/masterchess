@@ -1,0 +1,28 @@
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 3em;
+}
+
+.cardContent > img {
+  width: 5em;
+  margin: 1em;
+}
+
+.cardContent > h3 {
+  margin: 1em;
+}
+
+.cardContent > p {
+  margin: 1em;
+  text-align: center;
+}
+
+@media(max-width: 600px){
+  .cardContent{
+    padding: 2em;
+  }
+}
