@@ -21,7 +21,7 @@ export default (state = INITIAL_STATE, action) => {
       return { ...state, cell: action.payload, loading: true, moves: [] };
 
     case "GET_MOVES_SUCCESS":
-      return { ...state, moves: action.payload, loading: true, knight: null };
+      return { ...state, moves: action.payload, loading: false, knight: null };
 
     case "GET_MOVES_FAILUED":
       return { ...state, cell: action.payload, loading: false };

@@ -31,11 +31,11 @@
   color: #414f5a;
 }
 
-@media(max-width: 600px){
+@media(max-width: 800px){
   .onboarding .logo{
     margin-right: 0em;
     margin-bottom: 1em;
-    padding: 2em;
+    padding: 1em;
     height: 10em;
   }
 

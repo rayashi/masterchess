@@ -1,0 +1,25 @@
+.loading {
+  text-align: center;
+  padding: 0.5em;
+}
+
+.loading img {
+  width: 2em;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+.loading p {
+  font-size: 1.2em;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}

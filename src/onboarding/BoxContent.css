@@ -12,6 +12,7 @@
 }
 
 .cardContent > h3 {
+  font-size: 1em;
   margin: 1em;
 }
 
@@ -20,9 +21,9 @@
   text-align: center;
 }
 
-@media(max-width: 600px){
+@media(max-width: 800px){
   .cardContent{
-    padding: 2em;
+    padding: 1em;
   }
   .cardContent > img, .cardContent > h3, .cardContent > p {
     margin: 0.5em;
