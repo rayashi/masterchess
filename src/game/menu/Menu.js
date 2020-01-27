@@ -24,7 +24,7 @@ export default function Menu() {
       <div className="message">
         <p>
           {knight && moves.length === 0 && 
-            "Now just press to find the moves" 
+            "Now just press find to highlight the moves" 
           }
           
           {!knight && moves.length === 0 && 
