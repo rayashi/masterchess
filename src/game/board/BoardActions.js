@@ -10,6 +10,6 @@ export const getMovesSuccess = moves => (
   { type: "GET_MOVES_SUCCESS", payload: moves }
 );
 
-export const getMovesFailued = () => (
-  { type: "GET_MOVES_FAILUED" }
+export const getMovesFailed = () => (
+  { type: "GET_MOVES_FAILED" }
 );

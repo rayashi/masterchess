@@ -23,7 +23,7 @@ export default (state = INITIAL_STATE, action) => {
     case "GET_MOVES_SUCCESS":
       return { ...state, moves: action.payload, loading: false, knight: null };
 
-    case "GET_MOVES_FAILUED":
+    case "GET_MOVES_FAILED":
       return { ...state, loading: false };
 
     default:

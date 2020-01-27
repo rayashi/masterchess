@@ -1,7 +1,7 @@
 import { call, put } from "redux-saga/effects";
 import axios from "axios";
 
-import { getMovesSuccess, getMovesFailued} from "./BoardActions";
+import { getMovesSuccess, getMovesFailed } from "./BoardActions";
 
 const fetchMoves = async cell => {
   const response = await axios.post("/knight-moves", { cell });
@@ -13,6 +13,6 @@ export function* getMovesAsync(action) {
     const data = yield call(fetchMoves, action.payload);
     yield put(getMovesSuccess(data));
   } catch (e) {
-    yield put(getMovesFailued());
+    yield put(getMovesFailed());
   }
 }
