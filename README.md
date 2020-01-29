@@ -28,10 +28,10 @@ After cloning the project just go to the project folder and run:
 ## Project structure
 
 * `/src` - All application codes
-* `/src/onboarding` - An introduction page illustration how the app works
+* `/src/onboarding` - An introduction page illustrates how the app works
 * `/src/game` - Contains the Chess board and the menu
-* `/src/redux` - Here are the configurations of redux, `combineReducers` join all reducers,  and redux sagas to handle ascyncronous calls side effects.
-* `/src/shared` - Components that can be used in all application
+* `/src/redux` - Here are the configurations of redux, `combineReducers` join all reducers,  and redux sagas to handle asynchronous calls side effects.
+* `/src/shared` - Components that can be used in all application components
 
 ## Framework and library versions
 

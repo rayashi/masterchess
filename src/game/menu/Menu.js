@@ -48,7 +48,7 @@ export default function Menu() {
           <button disabled={!knight} onClick={onGetMovesPress}> FIND </button>      
         }
 
-        <Link to="/history"><button>History Moves</button> </Link>
+        <Link to="/history"><button>Moves History</button> </Link>
       </div>
     </div>
   );
