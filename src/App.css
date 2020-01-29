@@ -26,6 +26,7 @@ button{
   color: white;
   font-weight: bold;
   border-width: 0;
+  margin: 0.5em;
 }
 
 button:hover {
