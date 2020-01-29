@@ -1,4 +1,7 @@
 .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-right: 2em;
 }
 
@@ -23,7 +26,22 @@
   }
 
   .menu .message {
-    width: 16em;
+    width: 20em;
     margin: 0 auto;
+    font-size: 0.8em;
   }
+
+  .menu button{
+    padding: 0.5em;
+    margin: 0.2em;
+  }
+
+  .menu .logo img {
+    width: 1.5em;
+  }
+
+  .menu .logo h1 {
+    font-size: 0.8em;
+  }
+
 }

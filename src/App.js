@@ -12,6 +12,7 @@ import store from "./redux/store";
 
 import Onboarding from "./onboarding/Onboarding";
 import Game from "./game/Game";
+import History from "./history/History";
 
 function App() {
   axios.defaults.baseURL = process.env.REACT_APP_API_URL;
@@ -22,6 +23,9 @@ function App() {
         <Switch>
           <Route path="/game">
             <Game />
+          </Route>
+          <Route path="/history">
+            <History />
           </Route>
           <Route path="/">
             <Onboarding />

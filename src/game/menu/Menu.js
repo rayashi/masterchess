@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 import Logo from "../../shared/logo/Logo";
 import Loading from "../../shared/loading/Loading";
@@ -42,10 +43,13 @@ export default function Menu() {
 
       {loading && <Loading />}
 
-      {knight && !loading &&
-        <button disabled={!knight} onClick={onGetMovesPress}> FIND </button>      
-      }
+      <div>
+        {knight && !loading &&
+          <button disabled={!knight} onClick={onGetMovesPress}> FIND </button>      
+        }
 
+        <Link to="/history"><button>History Moves</button> </Link>
+      </div>
     </div>
   );
 }
