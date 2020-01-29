@@ -13,7 +13,7 @@ export default [
   },
   { 
     title: "Then Find the moves!",
-    text: "Press the button FIND to search all position a Knight could be after two turns",
+    text: "Press the button FIND to search all positions a Knight could be at after two turns",
     image: require("../images/click.png"),
     buttonText: "Let me try!"
   }
